@@ -1,0 +1,60 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+    <title>Global Wealth Map</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <h1>Global Wealth Map</h1>
+
+    <table>
+      <tr>
+        <div class="radio-toolbar">
+          <td><input type="radio" class="userInput" id="medianSelection" name="chartType1" value="Median" checked="checked"><label class="radioLabel" for="medianSelection">Median</label><br>
+          <input type="radio" class="userInput" id="averageSelection" name="chartType1" value="Average"><label class="radioLabel" for="averageSelection">Average</label></td>
+        </div>
+      </tr>
+    </table>
+
+    <div class="mapContainer" id="medianMapContainer">
+      <iframe title="Global Wealth Map" aria-label="map" id="datawrapper-chart-L7AXg" class="dataWrapperMap" src="https://datawrapper.dwcdn.net/L7AXg/1/" scrolling="no" frameborder="0"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
+      </script>
+    </div>
+
+    <div class="mapContainer hide" id="averageMapContainer">
+      <iframe title="Average Wealth Per Adult" aria-label="map" id="datawrapper-chart-bXDXI" class="dataWrapperMap" src="https://datawrapper.dwcdn.net/bXDXI/1/" scrolling="no" frameborder="0"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
+      </script>
+    </div>
+
+    <div class="mapContainer">
+      <iframe title="Wealth Inequality (Gini Index)" aria-label="map" id="datawrapper-chart-BP2RF" class="dataWrapperMap" src="https://datawrapper.dwcdn.net/BP2RF/1/" scrolling="no" frameborder="0"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
+      </script>
+    </div>
+
+    <div class="mapContainer">
+      <iframe title="% of Adults with Wealth &amp;gt;$1 million" aria-label="map" id="datawrapper-chart-E46sP" class="dataWrapperMap" src="https://datawrapper.dwcdn.net/E46sP/1/" scrolling="no" frameborder="0"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
+      </script>
+    </div>
+
+    <div class="tableContainer">
+      <iframe title="Share of Global Wealth by Country (2000 - 2019)" aria-label="chart" id="datawrapper-chart-n36bm" class="dataWrapperTable" src="https://datawrapper.dwcdn.net/n36bm/1/" scrolling="no" frameborder="0"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
+      </script>
+    </div>
+
+
+</body>
+
+<script src="countriesData.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.7.3/dist/Chart.min.js"></script>
+<script src="globalWealthMapScript.js"></script>
+
+</html>
